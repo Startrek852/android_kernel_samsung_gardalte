@@ -1,0 +1,42 @@
+comment "Samsung Mobile Modem Interface (SVNET2) V1"
+menuconfig SEC_MODEM_V1
+	bool "Samsung Mobile Modem Interface (Memory-Type)"
+	depends on SEC_MODEM
+	default n
+	---help---
+	  Samsung Modem Interface Driver.
+
+config CDMA_MODEM_CBP72
+	bool "modem chip : VIA CBP7.2"
+	depends on SEC_MODEM_V1
+	default n
+
+config LTE_MODEM_CMC221
+	bool "modem chip : SEC CMC221"
+	depends on SEC_MODEM_V1
+	default n
+
+config UMTS_MODEM_SS222
+	bool "modem chip : SEC SS222"
+	depends on SEC_MODEM_V1
+	default n
+
+config UMTS_MODEM_SH222AP
+	bool "modem chip : SEC SH222AP (One-chip)"
+	depends on SEC_MODEM_V1
+	default n
+
+config LINK_DEVICE_DPRAM
+	bool "modem driver link device DPRAM"
+	depends on SEC_MODEM_V1
+	default n
+
+config LINK_DEVICE_C2C
+	bool "modem driver link device C2C"
+	depends on SEC_MODEM_V1
+	default n
+
+config LINK_DEVICE_SHMEM
+	bool "modem driver link device shared memory"
+	depends on SEC_MODEM_V1
+	default n
