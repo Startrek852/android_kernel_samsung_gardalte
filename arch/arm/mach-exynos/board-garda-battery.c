@@ -51,7 +51,7 @@
 /* cable state */
 static struct s3c_adc_client *temp_adc_client;
 extern int current_cable_type;
-extern int system_rev;
+extern unsigned int system_rev;
 extern bool is_cable_attached;
 
 #if defined(CONFIG_MACH_DELOSLTE_KOR_SKT) || defined(CONFIG_MACH_DELOSLTE_KOR_KT) || \
